@@ -6,6 +6,7 @@
 @import "informativo.css";
 @import "noticias.css";
 @import "header.css";
+@import "_mobile.css";
 
 * {
     margin: 0;
@@ -22,6 +23,7 @@ body {
     --cor-primaria:#1A1A1A;
     --cor-botao-principal: #FFF1AE;
     --cor-botao-secundario: #4741E8;
+    --cor-natural: #ffffff;
 
     /*fontes*/
     --font-paragrafo: 'Open Sans', sans-serif;

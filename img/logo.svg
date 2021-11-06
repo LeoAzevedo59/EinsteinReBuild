@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="259.843" height="76.691" viewBox="0 0 259.843 76.691">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.339" cy="0.397" r="0.681" gradientTransform="matrix(0.775, 0.632, -0.539, 0.661, 0.29, -0.079)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.379" stop-color="#9f9f9f"/>
+      <stop offset="1" stop-color="#242424"/>
+    </radialGradient>
+  </defs>
+  <g id="logo" transform="translate(-659.157 -909.309)">
+    <g id="Grupo_62" data-name="Grupo 62" transform="translate(516.366 829.309)">
+      <g id="logo-barraNavegador" transform="translate(142.79 81.009)">
+        <path id="Caminho_403" data-name="Caminho 403" d="M-96.388-461.019h53.612l-9.212,18.164H-77.215v10.091h17.154v19.173H-77.215v8.073h36.327l-9.082,19.173H-96.388Z" transform="translate(115.713 461.019)" fill="#fff700"/>
+        <circle id="Elipse_20" data-name="Elipse 20" cx="19.249" cy="19.249" r="19.249" transform="translate(0 17.154)" fill="url(#radial-gradient)"/>
+      </g>
+      <g id="Grupo_59" data-name="Grupo 59" transform="translate(161.106 80)">
+        <path id="Caminho_404" data-name="Caminho 404" d="M2025-1388.689V-1407h55.1v1.009H2026.04v17.3Z" transform="translate(-2025 1407)" fill="#2b2b2b"/>
+        <path id="Caminho_405" data-name="Caminho 405" d="M2210.227-1253.991h-24.218v8.073h17.155v21.191h-17.155v6.054h35.318v1.009H2185v-8.073h17.155v-19.173H2185V-1255h25.227Z" transform="translate(-2164.818 1274.173)" fill="#2b2b2b"/>
+        <path id="Caminho_406" data-name="Caminho 406" d="M2025-959v20.182h47.427v-1.009h-46.418V-959Z" transform="translate(-2025 1015.509)" fill="#2b2b2b"/>
+      </g>
+      <path id="Caminho_407" data-name="Caminho 407" d="M2402.009-945.809,2412.1-967h-2.018v1.009L2401-946.818v1.009Z" transform="translate(-2192.467 1102.5)" fill="#2b2b2b"/>
+      <path id="Caminho_408" data-name="Caminho 408" d="M2402.009-938.818,2412.1-959h-1.47L2401-939.827v1.009Z" transform="translate(-2194.485 1039)" fill="#2b2b2b"/>
+    </g>
+    <text id="EINSTEIN" transform="translate(743 956)" fill="#1a1a1a" font-size="40" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="0" y="0">EINSTEIN</tspan></text>
+    <text id="ORGANIZAÇÃO_EINSTEIN_DE_ENSINO_E_FACULDADES_INTEGRADAS_EINSTEIN_DE_LIMEIRA" data-name="ORGANIZAÇÃO EINSTEIN DE ENSINO
+E FACULDADES INTEGRADAS EINSTEIN DE LIMEIRA" transform="translate(831 973)" fill="#303030" font-size="7" font-family="OpenSans, Open Sans"><tspan x="-59.679" y="0">ORGANIZAÇÃO EINSTEIN DE ENSINO</tspan><tspan x="-82.113" y="9">E FACULDADES INTEGRADAS EINSTEIN DE LIMEIRA</tspan></text>
+  </g>
+</svg>
