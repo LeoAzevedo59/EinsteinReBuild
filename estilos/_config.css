@@ -1,0 +1,82 @@
+/*importação*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap');
+@import "footer";
+@import "cursosPopulares.css";
+@import "bolsaEstudo.css";
+@import "informativo.css";
+@import "noticias.css";
+@import "header.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    /*cores*/
+    --cor-master: #FFF300;
+    --cor-primaria:#1A1A1A;
+    --cor-botao-principal: #FFF1AE;
+    --cor-botao-secundario: #4741E8;
+
+    /*fontes*/
+    --font-paragrafo: 'Open Sans', sans-serif;
+    --font-titulo: 'Roboto', sans-serif;
+
+    /*sombras*/
+    --sombra: 0px 2px 6px rgb(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-family: var(--font-titulo);
+    font-size: 1.375rem; /*22px*/ 
+    text-transform: uppercase;
+
+}
+
+p {
+    font-family: var(--font-paragrafo);
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.botao {
+    display: flex;
+    background-color: var(--cor-botao-principal);
+    width: 64px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    font-family: var(--font-titulo);
+    font-size: .6rem;
+    letter-spacing: 1px;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: .6 ease-in;
+    
+}
+
+.botao:hover {
+    background-color: var(--cor-master);
+}
+
+main {
+    max-width: 1365px;
+    height: 100%;
+    margin: 0 auto;
+}

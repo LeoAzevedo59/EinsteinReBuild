@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="15.968" viewBox="0 0 16 15.968">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.339" cy="0.397" r="0.681" gradientTransform="matrix(0.775, 0.632, -0.539, 0.661, 0.29, -0.079)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.379" stop-color="#9f9f9f"/>
+      <stop offset="1" stop-color="#242424"/>
+    </radialGradient>
+  </defs>
+  <g id="logo-barraNavegador" transform="translate(-142.79 -80)">
+    <g id="logo-barraNavegador-2" data-name="logo-barraNavegador" transform="translate(142.79 80.21)">
+      <path id="Caminho_403" data-name="Caminho 403" d="M-96.388-461.019h11.163l-1.918,3.782H-92.4v2.1h3.572v3.992H-92.4v1.681h7.564l-1.891,3.992h-9.665Z" transform="translate(100.412 461.019)" fill="#fff700"/>
+      <circle id="Elipse_20" data-name="Elipse 20" cx="4.008" cy="4.008" r="4.008" transform="translate(0 3.572)" fill="url(#radial-gradient)"/>
+    </g>
+    <g id="Grupo_59" data-name="Grupo 59" transform="translate(146.604 80)">
+      <path id="Caminho_404" data-name="Caminho 404" d="M2025-1403.187V-1407h11.473v.21h-11.257v3.6Z" transform="translate(-2025 1407)"/>
+      <path id="Caminho_405" data-name="Caminho 405" d="M2190.253-1254.79h-5.042v1.681h3.572v4.412h-3.572v1.261h7.354v.21H2185v-1.681h3.572v-3.992H2185v-2.1h5.253Z" transform="translate(-2180.798 1258.992)"/>
+      <path id="Caminho_406" data-name="Caminho 406" d="M2025-959v4.2h9.875v-.21h-9.665V-959Z" transform="translate(-2025 970.766)"/>
+    </g>
+    <path id="Caminho_407" data-name="Caminho 407" d="M2401.21-962.588l2.1-4.412h-.42v.21L2401-962.8v.21Z" transform="translate(-2244.521 1058.556)"/>
+    <path id="Caminho_408" data-name="Caminho 408" d="M2401.21-954.8l2.1-4.2H2403l-2,3.992v.21Z" transform="translate(-2244.941 1039)"/>
+  </g>
+</svg>
