@@ -97,7 +97,7 @@ nav {
 .banner-principal {
     width: 100%;
     height: calc(100vh - 144px - 80px);
-    background-image: url(/img/img-banner-principal.png);
+    background-image: url(../img/img-banner-principal.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
