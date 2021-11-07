@@ -1,6 +1,6 @@
 /*importação*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap');
-@import "footer";
+@import "footer.css";
 @import "cursosPopulares.css";
 @import "bolsaEstudo.css";
 @import "informativo.css";
@@ -29,20 +29,30 @@ body {
     --font-paragrafo: 'Open Sans', sans-serif;
     --font-titulo: 'Roboto', sans-serif;
 
+    /*tamanhos*/
+    --size-paragrafo: 1rem; /*16px*/
+    --size-titulo: 1.375rem; /*22px*/ 
+    --size-botao-principal: .6rem;  
+
     /*sombras*/
     --sombra: 0px 2px 6px rgb(0, 0, 0, 0.5);
 }
 
 h1 {
     font-family: var(--font-titulo);
-    font-size: 1.375rem; /*22px*/ 
+    font-size: var(--size-titulo); 
     text-transform: uppercase;
+}
 
+h3 {
+    font-family: var(--font-titulo);
+    font-size: var(--size-paragrafo);
+    text-transform: uppercase;
 }
 
 p {
     font-family: var(--font-paragrafo);
-    font-size: 1rem;
+    font-size: var(--size-paragrafo);
 }
 
 a {
@@ -63,7 +73,7 @@ li {
     color: var(--cor-primaria);
     text-transform: uppercase;
     font-family: var(--font-titulo);
-    font-size: .6rem;
+    font-size: var(--size-botao-principal);
     letter-spacing: 1px;
 
     align-items: center;

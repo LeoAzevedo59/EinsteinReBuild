@@ -1,1 +1,86 @@
-/*Léo*/
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-master);
+    padding: 1rem;
+    color: var(--cor-primaria);
+}
+
+h3{
+    margin-top: .5rem;
+}
+
+p {
+    padding-top: .3rem;
+}
+
+.container-contato, .container-menu-rodape, .container-horarios, .container-horarios, .container-localizacao, .container-cursos, .container-copyright{
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    max-width: 300px;
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+}
+
+.container-contato {
+    grid-column: 1/2;
+}
+
+.container-menu-rodape {
+    grid-column: 2/3;
+}
+
+.container-menu-rodape a, .container-cursos a {
+    font-family: var(--font-paragrafo);
+    color: var(--color-primaria);
+    padding: 0 .3rem;
+}
+
+.container-horarios {
+    grid-column: 3/4;
+    text-transform:capitalize;
+}
+
+.container-localizacao {
+    grid-column: 4/5;
+    text-transform:capitalize;
+}
+.container-localizacao > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-localizacao > ul > li > a > img {
+    margin-top: 1rem;
+}
+
+.container-cursos {
+    grid-column: 5/6;
+    position: relative;
+}
+
+.container-cursos > ul > li, .container-menu-rodape > ul > li {
+    margin-top: .6rem;
+}
+
+.container-btn-topo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.container-btn-topo > .btn-topo{
+    padding: .2rem ;
+}
+
+.container-copyright {
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
