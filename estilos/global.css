@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    /*cores*/
+    --cor-master: #FFF300;
+    --cor-primaria:#1A1A1A;
+    --cor-botao-principal: #FFF1AE;
+    --cor-botao-secundario: #4741E8;
+    --cor-natural: #ffffff;
+
+    /*fontes*/
+    --font-paragrafo: 'Open Sans', sans-serif;
+    --font-titulo: 'Roboto', sans-serif;
+
+    /*sombras*/
+    --sombra: 0px 2px 6px rgb(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-family: var(--font-titulo);
+    font-size: 1.375rem; /*22px*/ 
+    text-transform: uppercase;
+
+}
+
+p {
+    font-family: var(--font-paragrafo);
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.botao {
+    display: flex;
+    background-color: var(--cor-botao-principal);
+    width: 64px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    font-family: var(--font-titulo);
+    font-size: .6rem;
+    letter-spacing: 1px;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: .6 ease-in;
+    
+}
+
+.botao:hover {
+    background-color: var(--cor-master);
+}
+
+main {
+    max-width: 1365px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container, .container-nav {
+    width: 100%;
+    height: 100%;
+    max-width: 1365px;
+    margin: 0 auto;    
+}
+
+/* menu link*/
+.menu-link {
+    width: 100%;
+    height: 80px;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-link > ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu-link > ul > li > a {
+    font-family: var(--font-titulo);
+    text-transform: uppercase;
+    padding: .5rem .5rem;
+    margin-left: .5rem;
+    color: var(--cor-primaria);
+    
+}
+
+.botao-contato {
+    width: 110px;
+    height: 32px;
+    background-color: var(--cor-botao-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    margin-left: .5rem;
+    
+}
+
+.botao-teams {
+    font-family: var(--font-titulo);
+    color: var(--cor-natural);
+    width: 170px;
+    height: 33px;
+    background-color: var(--cor-botao-secundario);
+    border-radius: .3125rem; /*5px*/
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+/*menu principal*/
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--cor-natural);
+}
+
+.menu-principal {
+    width: 100%;
+    height: 144x;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.menu-principal > img {
+    padding: .5rem;
+}
+
+.menu-principal > ul {
+    display: flex;
+}
+
+.menu-principal > ul > li > a {
+    font-family: var(--font-titulo);
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    margin-left: 1rem;
+    padding: .5rem;
+}
+
+/*banner-principal*/
+.banner-principal {
+    width: 100%;
+    height: calc(100vh - 144px - 80px);
+    background-image: url(../img/img-banner-principal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#noticias {
+    width: 100%;
+    height: 100vh;
+}
+
+
+@media (max-width: 1100px){
+    .menu-principal > ul > li > a{
+        display: none;
+    }
+}
