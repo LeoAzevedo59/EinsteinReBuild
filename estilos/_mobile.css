@@ -2,6 +2,33 @@
     .menu-principal > ul > li > a, .menu-link, .menu-principal > .logoDesktop {
         display: none;
     }
+  
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-btn-topo {
+        display: none;
+    }
+
+    .container-copyright > img {
+        width: 150px;
+    }
+
+    .container-contato > p, .container-localizacao > p, .container-menu-rodape >  ul > li, .container-horarios > p, .container-cursos > ul > li, .container-copyright > p{
+        font-size: var(--size-paragrafo-mobile);
+    }
+
+    .container-contato > h3, .container-localizacao > h3, .container-menu-rodape > h3, .container-horarios > h3, .container-cursos > h3, .container-copyright > h3{
+        font-size: var(--size-paragrafo-mobile);
+    }
+
+    .container-localizacao > ul > li > a > img {
+        width: 2rem;
+    }
 
 }
 
