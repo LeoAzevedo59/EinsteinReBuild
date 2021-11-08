@@ -66,6 +66,7 @@ nav {
     position: -webkit-sticky;
     top: 0;
     background-color: var(--cor-natural);
+    z-index: 999999;
 }
 
 .menu-principal {
@@ -122,4 +123,9 @@ nav {
     border-radius: 33px;
     background-color: var(--cor-primaria);
     margin-top: .3rem;
+}
+
+hr {
+    width: 1365px; margin: 0 auto;
+    opacity: .2;
 }

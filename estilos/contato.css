@@ -1,0 +1,84 @@
+
+label {
+    display: flex;
+    justify-content: center;
+    margin-top: .8rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+}
+
+output {
+    margin: 0 auto;
+    min-width: 80px;
+    background-color: royalblue;
+    border-radius: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+
+#contato {
+    font-family: sans-serif;
+    width: 100%;
+    height: calc(100vh - 144px - 80px);
+    position: relative;
+    overflow:auto;
+}
+
+.container-contatos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    color: royalblue;
+}
+
+#nome:focus, #endereco:focus, #cidade:focus, #idade:focus, #email:focus, #telefone:focus, #site:focus{
+    background-color: rgba(65, 105, 225, 0.3);
+    border: none;
+    padding: 5px;
+}
+
+input {
+    text-align: center;
+}
+
+#btn-send {
+    background-color: royalblue;
+    margin-top: 16px;
+    color: #fff;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 16px;
+    width: 70%;
+    cursor: pointer;
+}
+
+#btn-reset {
+    background-color: rgb(225, 65, 65);
+    margin-top: 16px;
+    color: #fff;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 16px;
+    width: 30%;
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}

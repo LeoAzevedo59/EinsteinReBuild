@@ -31,7 +31,7 @@
                 <img src="img/logo.svg" alt="logo menu desktop" class="logoDesktop">
                 <img src="img/logo-mobile.svg" alt="logo menu mobile" class="logoMobile">
                 <ul>
-                    <li><a href="#home">home</a></li>
+                    <li><a href="index.html">home</a></li>
                     <li><a href="#institucional">institucional</a></li>
                     <li><a href="#cursos">cursos</a></li>
                     <li><a href="#vestibular">vestibular</a></li>
@@ -49,10 +49,44 @@
         </div>
     </nav>
 
+<main>
     <section id="contato">
-        
-    </section>
+        <div class="container-contatos">
+            <h1>Formulário</h1>
+            <form action="post.html" method="POST">
+                
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="João">
 
+                <label for="sobre-nome">SobreNome</label>
+                <input type="text" name="sobre-nome" id="sobre-nome" placeholder="Silva">
+               
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Limeira">
+
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" min="17" max="70" step="1" placeholder="19">
+
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="email" placeholder="joao@gmail.com">
+
+                <label for="telefone">telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(19) 3034-3932">
+
+                <label for="celular">telefone</label>
+                <input type="tel" name="celular id="celular" placeholder="(19) 99322-3272">
+
+                <label for="cpf">CPF</label>
+                <input type="text" name="CPF" id="cpf" placeholder="999.999.999-99">
+                
+                <div class="container">
+                <input type="submite" name="Enviar" id="btn-send" value="Enviar">
+                <input type="reset" name="Limpar" id="btn-reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
     <footer>
         <div class="container-footer">
             <div class="container-contato">
