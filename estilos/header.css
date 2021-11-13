@@ -4,13 +4,6 @@ header {
     position: relative;
 }
 
-.container, .container-nav, .container-footer, .container-copyright {
-    width: 100%;
-    height: 100%;
-    max-width: 1365px;
-    margin: 0 auto;    
-}
-
 /* menu link*/
 .menu-link {
     width: 100%;
