@@ -42,56 +42,49 @@
 }
 
 @media (max-width: 450px) {
-    /**/
-
-    .container-artigo {
-        height: 340px;
-        width: 300px;
+    .container-texto-educao-basica > h3, .container-texto-tecnico > h3, .container-texto-graduacao > h3, .container-texto-pos-graduacao > h3  {
+        text-align: center;
         margin-top: 1rem;
     }
 
-
-    .hero {
-        display: flex;
-        flex-direction: column;
+    .container-imagem-educao-basica > img, .container-imagem-tecnico > img, .container-imagem-graduacao > img, .container-imagem-pos-graduacao > img {
+        width: 320px;
+        margin-top: 1rem;
     }
 
-    .img {
+    .container-texto-educao-basica > p, .container-texto-tecnico > p, .container-texto-graduacao > p, .container-texto-pos-graduacao > p {
         width: 100%;
-        height: 270px;
+        padding: 0 .5rem;
+        margin-top: 1rem;
     }
 
-    .conteudo {
-        width: 100%;
+    #informativo {
         padding: 0;
     }
-    
-    h3 {
-        margin-top: 1rem;
+
+    .container-texto-educao-basica > .botao, .container-texto-tecnico > .botao, .container-texto-graduacao > .botao, .container-texto-pos-graduacao > .botao {
+        margin-right: .5rem;
     }
 
-    p {
-        text-align: justify;
-        padding: .5rem;
-        font-size: var(--size-paragrafo-mobile);
-    }
 
-    .conteudo > .botao {
-        visibility: hidden;
-    }
+}
 
-    .botao-mobile {
+@media (max-width: 988px) {
+    #informativo {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--cor-primaria);
-        text-transform: uppercase;
-        font-family: var(--font-titulo);
-        font-size: var(--size-titulo-principal-desktop);
-        letter-spacing: 1px;
-        width: 100%;
-        height: 30px;
-        margin-top: .5rem;
-        background-color: var(--cor-botao-principal);
+        flex-wrap: wrap;
+    }
+
+    .container-imagem-educao-basica, .container-imagem-tecnico, .container-imagem-graduacao, .container-imagem-pos-graducao  {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1360px){
+    #noticias {
+        max-width: 60%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 1rem;
     }
 }
