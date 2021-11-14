@@ -35,18 +35,17 @@ body {
     --size-titulo-desktop: 1.375rem; /*22px*/ 
     --size-botao-principal-desktop: .6rem;  /*9.6px*/
 
-    --size-reducao-mobile: .125rem;
+    --size-reducao-mobile: .25rem; /*2px*/
 
-    --size-paragrafo-mobile: calc(var(--size-paragrafo-desktop) - var(--size-reducao-mobile));
-    --size-titulo-mobile: calc(var(--size-titulo-desktop) - var(--size-reducao-mobile))
-    /*--size-botao-principal-mobile:*/
+    --size-paragrafo-mobile: calc(var(--size-paragrafo-desktop) - var(--size-reducao-mobile)); /*14px*/
+    --size-titulo-mobile: calc(var(--size-titulo-desktop) - var(--size-reducao-mobile)) /*20px*/
 }
 
 h1 {
     font-family: var(--font-titulo);
     font-size: var(--size-titulo-desktop); 
     text-transform: uppercase;
-    margin-top: 1rem;
+    margin: 3rem 0 1rem 0;
 }
 
 h3 {

@@ -22,6 +22,15 @@ output {
     text-align: center;
 }
 
+input {
+    height: 30px;
+    width: 200px;
+}
+
+label {
+    font-family: var(--font-titulo);
+}
+
 
 #contato {
     font-family: sans-serif;
