@@ -15,30 +15,32 @@
     box-sizing: border-box;
 }
 
+:root {
+      /*cores*/
+      --cor-master: #FFF300;
+      --cor-primaria:#1A1A1A;
+      --cor-botao-principal: #FFF1AE;
+      --cor-botao-secundario: #4741E8;
+      --cor-natural: #ffffff;
+  
+      /*fontes*/
+      --font-paragrafo: 'Open Sans', sans-serif;
+      --font-titulo: 'Roboto', sans-serif;
+  
+      /*tamanhos*/
+      --size-paragrafo-desktop: 1rem; /*16px*/
+      --size-titulo-desktop: 1.375rem; /*22px*/ 
+      --size-botao-principal-desktop: .6rem;  /*9.6px*/
+  
+      --size-reducao-mobile: .25rem; /*2px*/
+  
+      --size-paragrafo-mobile: calc(var(--size-paragrafo-desktop) - var(--size-reducao-mobile)); /*14px*/
+      --size-titulo-mobile: calc(var(--size-titulo-desktop) - var(--size-reducao-mobile)) /*20px*/
+}
+
 body {
     width: 100%;
     height: 100%;
-
-    /*cores*/
-    --cor-master: #FFF300;
-    --cor-primaria:#1A1A1A;
-    --cor-botao-principal: #FFF1AE;
-    --cor-botao-secundario: #4741E8;
-    --cor-natural: #ffffff;
-
-    /*fontes*/
-    --font-paragrafo: 'Open Sans', sans-serif;
-    --font-titulo: 'Roboto', sans-serif;
-
-    /*tamanhos*/
-    --size-paragrafo-desktop: 1rem; /*16px*/
-    --size-titulo-desktop: 1.375rem; /*22px*/ 
-    --size-botao-principal-desktop: .6rem;  /*9.6px*/
-
-    --size-reducao-mobile: .25rem; /*2px*/
-
-    --size-paragrafo-mobile: calc(var(--size-paragrafo-desktop) - var(--size-reducao-mobile)); /*14px*/
-    --size-titulo-mobile: calc(var(--size-titulo-desktop) - var(--size-reducao-mobile)) /*20px*/
 }
 
 h1 {
