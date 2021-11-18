@@ -2,7 +2,11 @@
     .menu-principal > ul > li > a, .menu-link, .menu-principal > .logoDesktop {
         display: none;
     }
-  
+
+    #menu-desktop  {
+        display: none;
+    }
+
     .container-footer {
         display: flex;
         flex-direction: column;
@@ -38,6 +42,9 @@
     }
     .botao-mobile {
         visibility: hidden;
+    }
+    #hamburguer, #float {
+        display: none;
     }
 }
 

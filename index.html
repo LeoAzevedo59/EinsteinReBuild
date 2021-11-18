@@ -35,7 +35,17 @@
                 <div class="menu-principal">
                     <img src="img/logo.svg" alt="logo menu desktop" class="logoDesktop">
                     <img src="img/logo-mobile.svg" alt="logo menu mobile" class="logoMobile">
-                    <ul>
+
+                    <div id="hamburguer">
+                        <div id="menu-hamburguer" onclick="onClickOpen()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                    </div>
+
+                     <!--menu-desktop-->
+                    <ul id="menu-desktop" class="menu-desktop">
                         <li><a href="index.html">home</a></li>
                         <li><a href="#institucional">institucional</a></li>
                         <li><a href="#cursos">cursos</a></li>
@@ -45,11 +55,20 @@
                         <li><a href="#biblioteca">biblioteca</a></li>
                     </ul>
 
-                    <div class="hamburguer">
-                        <div class="linha" id="linha1"></div>
-                        <div class="linha" id="linha2"></div>
-                        <div class="linha" id="linha3"></div>
-                    </div>
+   
+                    <!--menu-mobile-->
+                    <div id="float" class="float">
+                        <ul id="menu-mobile" class="menu-mobile">
+                        <a href="/"><li>Home</li></a>
+                        <a href="/"><li>institucional</li></a>
+                        <a href="/"><li>cursos</li></a>
+                        <a href="/"><li>vestibular</li></a>
+                        <a href="/"><li>secretaria</li></a>
+                        <a href="/"><li>esporte</li></a>
+                        <a href="/"><li>biblioteca</li></a>
+                        
+                    </ul>
+
                 </div>
             </div>
         </nav>
@@ -62,7 +81,7 @@
              
                 <div class="container-artigo">
                     <div class="hero">
-                        <div class="img"></div>
+                        <div class="img img-art1"></div>
                         <div class="conteudo">
                             <h3>mês setembro amarelo</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam perspiciatis deleniti magnam totam. Dolorem sapiente blanditiis</p>
@@ -74,9 +93,9 @@
 
                 <div class="container-artigo">
                     <div class="hero">
-                        <div class="img"></div>
+                        <div class="img img-art2"></div>
                         <div class="conteudo">
-                            <h3>mês setembro amarelo</h3>
+                            <h3>Outubro Rosa</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam perspiciatis deleniti magnam totam. Dolorem sapiente blanditiis</p>
                             <div class="botao">Ler mais</div>
                         </div>
@@ -85,9 +104,9 @@
 
                 <div class="container-artigo">
                     <div class="hero">
-                        <div class="img"></div>
+                        <div class="img img-art3"></div>
                         <div class="conteudo">
-                            <h3>mês setembro amarelo</h3>
+                            <h3>Enem 2022</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam perspiciatis deleniti magnam totam. Dolorem sapiente blanditiis</p>
                             <div class="botao">Ler mais</div>
                         </div>
@@ -295,6 +314,6 @@
             </div>
             
         </footer>
-
+        <script src="app/main.js"></script>
     </body>
 </html>

@@ -13,6 +13,7 @@
     height: 314px;
     box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.2);
     margin: 1rem .5rem;
+    border-radius: 10px;
 }
 
 .container-cursos-populares > h3{
@@ -24,7 +25,8 @@
 
 .container-cursos-populares > img {
     height: 130px;
-    width: 261px;
+    width: 260px;
+    border-radius: 10px 10px 0 0;
 }
 
 .container-conteudo-curso-popular {
@@ -34,6 +36,7 @@
     grid-template-columns: 50px 4fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     align-items: center;
+    border-radius: 10px;
 }
 
 .icone-grade {
