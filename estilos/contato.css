@@ -116,6 +116,19 @@ input:valid ~ label {
     padding: 0.4em;
 }
 
-.teste {
+.frm-box {
     border: none;
+}
+
+.inform2 > ul {
+    padding-top: 1rem;
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inform > h3 {
+    margin-top: 1rem;
 }

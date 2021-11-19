@@ -120,6 +120,12 @@
     .container-imagem-educao-basica, .container-imagem-tecnico, .container-imagem-graduacao, .container-imagem-pos-graducao  {
         text-align: center;
     }
+
+    #contato {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 @media (max-width: 750px)
 {
