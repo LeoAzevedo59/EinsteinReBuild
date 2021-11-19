@@ -1,93 +1,121 @@
+#contato {
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 2rem;
+}
 
-label {
+.img-contato {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.img-contato > img {
+    width: 100%;
+    height: 350px;
+}
+
+.formulario-contato {
+    height: 100%;
+
     display: flex;
-    justify-content: center;
-    margin-top: .8rem;
+    flex-direction: column;
 
+    background-color: #fff;
+    color: var(--cor-primaria);
 }
 
 form {
+    background: rgba(255, 255, 255, 1);
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 32px auto;
+    padding: 32px 64px;
+
     display: flex;
     flex-direction: column;
-    width: 200px;
-    justify-content: center;
 }
 
-output {
-    margin: 0 auto;
-    min-width: 80px;
-    background-color: royalblue;
-    border-radius: 16px;
-    color: #fff;
-    text-align: center;
+form h2 {
+    margin-bottom: 32px;
 }
 
-input {
-    height: 30px;
-    width: 200px;
-}
-
-label {
-    font-family: var(--font-titulo);
-}
-
-
-#contato {
-    font-family: sans-serif;
-    width: 100%;
-    height: calc(100vh - 144px - 80px);
+div.input {
+    margin-bottom: 24px;
     position: relative;
-    overflow:auto;
 }
 
-.container-contatos {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
+input,
+button {
+    /* reset appeareance */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 
-h1 {
-    text-align: center;
-    color: royalblue;
-}
-
-#nome:focus, #endereco:focus, #cidade:focus, #idade:focus, #email:focus, #telefone:focus, #site:focus{
-    background-color: rgba(65, 105, 225, 0.3);
-    border: none;
-    padding: 5px;
-}
-
-input {
-    text-align: center;
-}
-
-#btn-send {
-    background-color: royalblue;
-    margin-top: 16px;
-    color: #fff;
-    padding: 5px 0px;
-    border: none;
-    border-radius: 16px;
-    width: 70%;
-    cursor: pointer;
-}
-
-#btn-reset {
-    background-color: rgb(225, 65, 65);
-    margin-top: 16px;
-    color: #fff;
-    padding: 5px 0px;
-    border: none;
-    border-radius: 16px;
-    width: 30%;
-    margin-left: 5px;
-    cursor: pointer;
-    
-}
-
-.container {
-    display: flex;
+    /* box */
     width: 100%;
+
+    padding: 16px 0;
+
+    border:none;
+    border-bottom: 1px solid red;
+
+    background-color: transparent;
+
+    outline: none;
+
+    /* text */
+    color: black;
+    font-size: 1em;
+
+    cursor: pointer;
+
+}
+
+button {
+    margin-top: 16px;
+    background-color: var(--cor-master);
+    border: none;
+}
+
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    color: black ;
+
+    transition: .4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+
+.input span.error {
+    display: flex;
+    
+    padding: 0;
+
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+.teste {
+    border: none;
 }

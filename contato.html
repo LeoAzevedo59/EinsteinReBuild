@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <title>Einstein Limeira</title>
 
@@ -16,6 +17,7 @@
 
     <body>
 
+        <!-- #CABEÇALHO -->
         <header>
             <div class="container">
                 <div class="menu-link">
@@ -30,12 +32,23 @@
                
             </div>
         </header>
+        <!-- #MENU NAVEGAÇÃO -->
         <nav>
             <div class="container-nav">
                 <div class="menu-principal">
                     <img src="img/logo.svg" alt="logo menu desktop" class="logoDesktop">
                     <img src="img/logo-mobile.svg" alt="logo menu mobile" class="logoMobile">
-                    <ul>
+
+                    <div id="hamburguer">
+                        <div id="menu-hamburguer" onclick="onClickOpen()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                    </div>
+
+                     <!--menu-desktop-->
+                    <ul id="menu-desktop" class="menu-desktop">
                         <li><a href="index.html">home</a></li>
                         <li><a href="#institucional">institucional</a></li>
                         <li><a href="#cursos">cursos</a></li>
@@ -45,117 +58,155 @@
                         <li><a href="#biblioteca">biblioteca</a></li>
                     </ul>
 
-                    <div class="hamburguer">
-                        <div class="linha" id="linha1"></div>
-                        <div class="linha" id="linha2"></div>
-                        <div class="linha" id="linha3"></div>
-                    </div>
+   
+                    <!--menu-mobile-->
+                    <div id="float" class="float">
+                        <ul id="menu-mobile" class="menu-mobile">
+                        <a href="/"><li>Home</li></a>
+                        <a href="/"><li>institucional</li></a>
+                        <a href="/"><li>cursos</li></a>
+                        <a href="/"><li>vestibular</li></a>
+                        <a href="/"><li>secretaria</li></a>
+                        <a href="/"><li>esporte</li></a>
+                        <a href="/"><li>biblioteca</li></a>
+                        
+                    </ul>
+
                 </div>
             </div>
         </nav>
+        <!-- #BANNER PRINCIPAL -->
+        <div class="banner-principal"></div>
 
-<main>
-    <section id="contato">
-        <div class="container-contatos">
-            <h1>Metricula</h1>
-            <form action="post.html" method="POST">
-                
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="João">
+        <!-- #CORPO -->
 
-                <label for="sobre-nome">SobreNome</label>
-                <input type="text" name="sobre-nome" id="sobre-nome" placeholder="Silva">
+        <main id="contato">
+
+            <section class="img-contato">
+                <div class="0">
+                    <h3>fale conosco</h3>
+                    <p>Telefone: (19) 3404-9594</p>
+                    <h3>trabalhe conosco</h3>
+                    <p>Envie o seu currículo:<br>contato@einsteinlimeira.com.br</p>
+                </div>
+
+                <div class="1">
+                    <h3>horários de atendimento</h3>
+                    <h3>secretaria</h3>
+                    <p>Seg. a Sex - 12h00 às 21h30</p>
+                    <h3>caixa</h3>
+                    <p>Segunda a Sexta<br>12 às 16h e 17 às 21h30</p>
+                    <h3>financeiro</h3>
+                    <p>Seg. a Sex - 12h00 às 21h30</p>
+                </div>
+
+                <div class="2">
+                    <h3>Localização</h3>
+                    <p>Rua: Raul Machado, n° 134 Bairro: Vila Queiroz Limeira-SP CEP 13485-024</p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/einsteinlimeira/" target="_blank"><img src="img/icon-instagram.svg" alt=""></a></li>
+                            <li><a href="https://www.facebook.com/einstein.limeira" target="_blank"><img src="img/icon-facebook.svg" alt=""></a></li>
+                            <li><a href="https://www.youtube.com/user/LimeiraEinstein" target="_blank"><img src="img/icon-youtube.svg" alt=""></a></li>
+                        </ul>
+                </div>
+            </section>
+
+            <section class="formulario-contato">
                
-                <label for="cidade">Cidade</label>
-                <input type="text" name="cidade" id="cidade" placeholder="Limeira">
-
-                <label for="idade">Idade</label>
-                <input type="number" name="idade" id="idade" min="17" max="70" step="1" placeholder="19">
-
-                <label for="email">E-Mail</label>
-                <input type="email" name="email" id="email" placeholder="joao@gmail.com">
-
-                <label for="telefone">telefone</label>
-                <input type="tel" name="telefone" id="telefone" placeholder="(19) 3034-3932">
-
-                <label for="celular">telefone</label>
-                <input type="tel" name="celular id="celular" placeholder="(19) 99322-3272">
-
-                <label for="cpf">CPF</label>
-                <input type="text" name="CPF" id="cpf" placeholder="999.999.999-99">
+                <h1>Contato Pre Matricula</h1>
+                <form action="">
                 
-                <div class="container">
-                <input type="submite" name="Enviar" id="btn-send" value="Enviar">
-                <input type="reset" name="Limpar" id="btn-reset" value="Limpar">
+                    <div class="input">
+                      <input required type="text" />
+                      <label>Nome</label>
+                      <span class="error"></span>
+                    </div>
+                
+                
+                    <div class="input">
+                      <input required type="email" />
+                      <label>Email</label>
+                      <span class="error"></span>
+                    </div>
+                
+                    <div class="input"> 
+                    <input class="teste" required type="text" name="CPF" maxlength="11" onblur="return verificarCPF(this.value)"/>
+                    <label>CPF</label>           
+                    <span class="error"></span>
                 </div>
-            </form>
-        </div>
-    </section>
-</main>
-    <footer>
-        <div class="container-footer">
-            <div class="container-contato">
-                <h3>fale conosco</h3>
-                <p>Telefone: (19) 3404-9594</p>
-                <h3>trabalhe conosco</h3>
-                <p>Envie o seu currículo:<br>
-                    contato@einsteinlimeira.com.br</p>
-            </div>
 
-            <div class="container-menu-rodape">
-                <h3>menu</h3>
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">institucional</a></li>
-                    <li><a href="#">cursos</a></li>
-                    <li><a href="#">vestibular</a></li>
-                    <li><a href="#">secretaria</a></li>
-                    <li><a href="#">esporte</a></li>
-                    <li><a href="#">biblioteca</a></li>
-                </ul>
-            </div>
+                    <button type="submit">Enviar</button>
+                </form>
 
-            <div class="container-horarios">
-                <h3>horários de atendimento</h3>
-                <h3>secretaria</h3>
-                <p>Seg. a Sex - 12h00 às 21h30</p>
-                <h3>caixa</h3>
-                <p>Segunda a Sexta<br>
-                    12 às 16h e 17 às 21h30</p>
-                <h3>financeiro</h3>
-                <p>Seg. a Sex - 12h00 às 21h30</p>
-            </div>
+                  
+            </section>
 
-            <div class="container-localizacao">
-                <h3>Localização</h3>
-                <p>Rua: Raul Machado, n° 134
-                    Bairro: Vila Queiroz Limeira-SP
-                    CEP 13485-024</p>
+        </main>
+
+        <!-- #RODAPE -->
+        <footer>
+            <div class="container-footer">
+                <div class="container-contato">
+                    <h3>fale conosco</h3>
+                    <p>Telefone: (19) 3404-9594</p>
+                    <h3>trabalhe conosco</h3>
+                    <p>Envie o seu currículo:<br>contato@einsteinlimeira.com.br</p>
+                </div>
+
+                <div class="container-menu-rodape">
+                    <h3>menu</h3>
                     <ul>
-                        <li><a href="https://www.instagram.com/einsteinlimeira/" target="_blank"><img src="img/icon-instagram.svg" alt=""></a></li>
-                        <li><a href="https://www.facebook.com/einstein.limeira" target="_blank"><img src="img/icon-facebook.svg" alt=""></a></li>
-                        <li><a href="https://www.youtube.com/user/LimeiraEinstein" target="_blank"><img src="img/icon-youtube.svg" alt=""></a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">institucional</a></li>
+                        <li><a href="#">cursos</a></li>
+                        <li><a href="#">vestibular</a></li>
+                        <li><a href="#">secretaria</a></li>
+                        <li><a href="#">esporte</a></li>
+                        <li><a href="#">biblioteca</a></li>
                     </ul>
-            </div>
+                </div>
 
-            <div class="container-cursos">
-                <h3>cursos</h3>
-                <ul>
-                    <li><a href="#">introdução</a></li>
-                    <li><a href="#">técnico</a></li>
-                    <li><a href="#">graduação</a></li>
-                    <li><a href="#">pós-graduação & extensão</a></li>
-                </ul>
-                <div class="container-btn-topo">
-                    <a href="#" class="btn-topo"> <img src="img/icon-botao-topo.svg" alt="voltar ao topo"> </a>
+                <div class="container-horarios">
+                    <h3>horários de atendimento</h3>
+                    <h3>secretaria</h3>
+                    <p>Seg. a Sex - 12h00 às 21h30</p>
+                    <h3>caixa</h3>
+                    <p>Segunda a Sexta<br>12 às 16h e 17 às 21h30</p>
+                    <h3>financeiro</h3>
+                    <p>Seg. a Sex - 12h00 às 21h30</p>
+                </div>
+
+                <div class="container-localizacao">
+                    <h3>Localização</h3>
+                    <p>Rua: Raul Machado, n° 134 Bairro: Vila Queiroz Limeira-SP CEP 13485-024</p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/einsteinlimeira/" target="_blank"><img src="img/icon-instagram.svg" alt=""></a></li>
+                            <li><a href="https://www.facebook.com/einstein.limeira" target="_blank"><img src="img/icon-facebook.svg" alt=""></a></li>
+                            <li><a href="https://www.youtube.com/user/LimeiraEinstein" target="_blank"><img src="img/icon-youtube.svg" alt=""></a></li>
+                        </ul>
+                </div>
+
+                <div class="container-cursos">
+                    <h3>cursos</h3>
+                    <ul>
+                        <li><a href="#">introdução</a></li>
+                        <li><a href="#">técnico</a></li>
+                        <li><a href="#">graduação</a></li>
+                        <li><a href="#">pós-graduação & extensão</a></li>
+                    </ul>
+                    <div class="container-btn-topo">
+                        <a href="#" class="btn-topo"> <img src="img/icon-botao-topo.svg" alt="voltar ao topo"> </a>
+                    </div>
+                </div>
+                <div class="container-copyright">
+                    <img src="img/logo.svg" alt="">
+                    <p>&copy Copyright 2021 Einstein. Todos os direitos reservados</p>
                 </div>
             </div>
-            <div class="container-copyright">
-                <img src="img/logo.svg" alt="">
-                <p>&copy Copyright 2021 Einstein. Todos os direitos reservados.</p>
-            </div>
-        </div>
-        
-    </footer>
-</body>
+            
+        </footer>
+        <script type="text/javascript" src="app/main.js"></script>
+       <!--><script type="text/javascript" src="app/validacaoCPF.js"></script>-->
+        <script type="text/javascript" src="app/frm.js"></script>
+    </body>
 </html>
