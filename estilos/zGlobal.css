@@ -1018,3 +1018,16 @@ nav {
         display: flex;
     }
 }
+
+.desconto {
+    width: 100%;
+    height: 50px;
+    background-color: var(--cor-botao-secundario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desconto > h3 {
+    color: var(--cor-natural);
+}
