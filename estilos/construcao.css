@@ -1,0 +1,52 @@
+#institucional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-construcao {
+
+}
+
+.container-construcao > img {
+    width: 350px;
+}
+
+.corpo {
+    background-color: #2929ff;
+}
+
+header, .cabeca {
+    background-color: var(--cor-natural);
+}
+.container-construcao > h3{
+    color: var(--cor-natural);
+    margin-bottom: 1rem;
+    margin-top: -3rem;
+}
+
+.container-construcao > h1 {
+    color: var(--cor-natural);
+}
+
+.link-construcao {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.link-construcao > li > a {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--font-paragrafo);
+    font-size: var(--size-paragrafo-desktop);
+    background-color: var(--cor-master);
+    border-radius: 10px;
+    padding: .5rem 1rem;
+}
+
+.link-construcao > li > a:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-master);
+}

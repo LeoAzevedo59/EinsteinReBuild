@@ -1,5 +1,6 @@
 /*importação*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap');
+@import "construcao.css";
 @import "contato.css";
 @import "footer.css";
 @import "cursosPopulares.css";
@@ -8,6 +9,7 @@
 @import "noticias.css";
 @import "header.css";
 @import "_mobile.css";
+
 
 * {
     margin: 0;
