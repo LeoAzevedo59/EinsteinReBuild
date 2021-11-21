@@ -1,0 +1,145 @@
+@media (max-width: 1100px){
+    .menu-principal > ul > li > a, .menu-link, .menu-principal > .logoDesktop {
+        display: none;
+    }
+
+    #menu-desktop  {
+        display: none;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-btn-topo {
+        display: none;
+    }
+
+    .container-copyright > img {
+        width: 150px;
+    }
+
+    .container-contato > p, .container-localizacao > p, .container-menu-rodape >  ul > li, .container-horarios > p, .container-cursos > ul > li, .container-copyright > p{
+        font-size: var(--size-paragrafo-mobile);
+    }
+
+    .container-contato > h3, .container-localizacao > h3, .container-menu-rodape > h3, .container-horarios > h3, .container-cursos > h3, .container-copyright > h3{
+        font-size: var(--size-paragrafo-mobile);
+    }
+
+    .container-localizacao > ul > li > a > img {
+        width: 2rem;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    .hamburguer, .linha, .logoMobile {
+        display: none;
+    }
+    .botao-mobile {
+        visibility: hidden;
+    }
+    #hamburguer, #float {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .container-texto-educao-basica > h3, .container-texto-tecnico > h3, .container-texto-graduacao > h3, .container-texto-pos-graduacao > h3  {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: var(--size-titulo-mobile);
+    }
+
+    .container-imagem-educao-basica > img, .container-imagem-tecnico > img, .container-imagem-graduacao > img, .container-imagem-pos-graduacao > img {
+        width: 320px;
+        margin-top: 1rem;
+    }
+
+    .container-texto-educao-basica > p, .container-texto-tecnico > p, .container-texto-graduacao > p, .container-texto-pos-graduacao > p {
+        width: 100%;
+        padding: 0 .8rem;
+        margin-top: 1rem;
+        font-size: var(--size-paragrafo-mobile);
+
+    }
+
+    #informativo {
+        padding: 0;
+    }
+
+    .container-texto-educao-basica > .botao, .container-texto-tecnico > .botao, .container-texto-graduacao > .botao, .container-texto-pos-graduacao > .botao {
+        margin-right: .8rem;
+    }
+
+    .botao {
+        margin-bottom: 1rem;
+    }
+
+
+}
+
+
+
+@media (max-width: 1360px){
+    #noticias {
+        width: 60%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    #cursosPopulares{
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width: 988px) {
+    #informativo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #cursosPopulares {
+        width: 85%;
+        display: flex;
+    }
+    
+    .container-imagem-educao-basica, .container-imagem-tecnico, .container-imagem-graduacao, .container-imagem-pos-graducao  {
+        text-align: center;
+    }
+
+    #contato {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 750px)
+{
+    #noticias {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    main {
+        width: 100%;
+    }
+
+    #cursosPopulares {
+        width: 100%;
+        display: flex;
+    }
+}
